@@ -32,3 +32,13 @@ Modern autonomous systems rely on sensor data to build 3D scene models for navig
 Traditional mapping systems assume full visibility and **fail to infer occluded regions**. This system addresses that gap.
 
 ---
+# Deliverables
+
+| # | Deliverable | Description |
+|---|---|---|
+| 1 | **Occlusion-Aware Reconstruction** | Complete 3D mesh from ~500px sparse depth + RGB |
+| 2 | **Scene Classification** | Free / Occupied / Occluded space + semantic labels |
+| 3 | **Hole-Filling Algorithm** | Geometrically plausible mesh completion |
+| 4 | **Nav2 Integration** | Safe path planning using reconstructed scene |
+
+---
