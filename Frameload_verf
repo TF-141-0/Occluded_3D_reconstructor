@@ -10,3 +10,16 @@ print(f"RGB   : {rgb.size} mode={rgb.mode}")
 print(f"Depth : {depth.size} mode={depth.mode}")
 print(f"Pose  :\n{pose}")
 EOF
+
+Output 
+
+RGB   : (640, 480) mode=RGB
+Depth : (640, 480) mode=I
+Pose  :
+[[ 0.93124521  0.01716686 -0.36325571 -0.14959294]
+ [ 0.07463293  0.9683845   0.23717017 -0.13273862]
+ [ 0.35591775 -0.24801806  0.9007082   0.18034773]
+ [ 0.          0.          0.          1.        ]]
+
+
+top left 3*3 matrix is camera face vector , last column is position vec
