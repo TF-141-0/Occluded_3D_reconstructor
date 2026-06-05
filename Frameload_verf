@@ -1,0 +1,12 @@
+python3 - <<'EOF'
+import numpy as np
+from PIL import Image
+
+rgb   = Image.open("seq-01/frame-000000.color.png")
+depth = Image.open("seq-01/frame-000000.depth.png")
+pose  = np.loadtxt("seq-01/frame-000000.pose.txt")
+
+print(f"RGB   : {rgb.size} mode={rgb.mode}")
+print(f"Depth : {depth.size} mode={depth.mode}")
+print(f"Pose  :\n{pose}")
+EOF
